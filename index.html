@@ -1,42 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Você consegue escapar do escape room?">
-        <meta name="keywords" content="Escape Room, Escape, Room, Feira Cultural, Projeto">
-        <meta name="author" content="Marina Luccas Castro">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" type="image/x-icon" href="icon.png">
-        <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <title>Escape Room</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="line"></div>
-                <h1 id="website-title">Escape Room : Mistério Entre Estantes</h1>
-                <div class="line2"></div>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Você consegue escapar do escape room?">
+    <meta name="keywords" content="Escape Room, Escape, Room, Feira Cultural, Projeto">
+    <meta name="author" content="Marina Luccas Castro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="restyle.css">
+    <title>Escape Room</title>
+</head>
+<body>
+    <script>
+        console.log(window.innerWidth, window.innerHeight);
+    </script>
+    <div class="container">
+        <header class="header">
+            <img src="detail1.png" id="detail1">
+            <div class="line"></div>
+            <h1 id="website-title">Escape ROOm : Mistério Entre Estantes</h1>
+            <div class="line2"></div>
+        </header>
+        <main class="body">
+            <div class="website-description">
+                <div class="textbox1">
+                    <p id="text-da-textbox1">Venha descobrir os mistérios da Biblioteca do Barão Hipotenúsio. Você tem 20 minutos para provar que consegue. Escape e conquiste a herança.</p>
+                    <video controls muted autoplay id="video1">
+                        <source src="vídeo1.mp4" type="video/mp4">
+                    </video>
+                    <a href="https://drive.google.com/file/d/1NtQviFL8JhimOcPP9Wnsk995t-Y0IXsw/view?usp=drive_link" id="link-do-video">Ver vídeo completo</a>
+                    <div id="line3"></div>
+                    <span id="span2">Quer saber mais?</span>
+                    <p id="p3">Vá até a <strong>sala 12.</strong></p>
+                    <div id="line4"></div>
+                    <span id="span5">Dúvidas? Pergunte para qualquer aluno que pertence ao 8°A</span>
+                    <span id="span6">Obrigado por jogar!</span>
+                </div>
+                <img src="image1.png" id="image1">
             </div>
-            <div class="detalhes-que-ngm-liga">
-            <div class="body">
-                <div class="website-description">
-                    <div class="textbox1">
-                        <p id="text-da-textbox1">Venha descobrir os mistérios da Biblioteca do Barão Hipotenúsio. Você tem 20 minutos para provar que consegue. Escape e conquiste a herança.</p>
-                        <div id="line3"></div>
-                        <span id="span2">Quer saber mais?</span>
-                        <p id="p3">Vá até a sala 12 que pertence ao 9°B</p>
-                        <span id="span4">O desafio só está começando...</span>
-                        <div id="line4"></div>
-                        <span id="span5">Dúvidas? Pergunte para qualquer aluno que pertence ao 8°A</span>
-                    </div>
-                    <img src="image1.png" id="image1">
-                </div>
-                <div class="galeria">
-                </div>
+        </main>
+    </div>
+    <footer>
+        <div class="creditos">
+            <a href="https://colegiophoton.com.br/">
+                <img src="https://colegiophoton.com.br/wp-content/uploads/al_opt_content/IMAGE/colegiophoton.com.br/wp-content/uploads/2023/08/logotipo-colegio-photon-2-1024x454.png.bv.webp?bv_host=colegiophoton.com.br" width="300px" id="logo-photon">      
+            </a>
+            <div id="creditos-span">
+                <p>Projetado por: Marina Luccas Castro</p>
+                <p>Site por: Lucas Rodrigues 8°A</p>
+                <p>Host: GitHub ©</p>
             </div>
         </div>
-    </body>
+    </footer>
+</body>
 </html>
