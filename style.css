@@ -1,157 +1,150 @@
+:root {
+    --cor-principal-texto: #281b12;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html {
+html, body {
+    width: 100%;
+    min-height: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-body {
-    width: 500px;
-    height: 500px;
+    font-family: "Old Standard TT", serif;
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-.line {
-    position: absolute;
-    top: 10%;
-    left: 4.4%;
-    width: 90%;
-    height: 4px;
-    background: #291d16;
-}
-
-.line2 {
-    position: absolute;
-    top: 29%;
-    left: 4.4%;
-    width: 90%;
-    height: 4px;
-    background: #291d16;
-}
-
-#website-title {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    left: 55%;
-    top: 20%;
-    font-size: 70px;
-    transform: translate(-50%, -50%);
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 700;
-    font-style: normal;
 }
 
 #detail1 {
-    display: flex;
-    position: absolute;  
+    width: 10%;
 }
 
-#image1 {
-    position: absolute;
+.header {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.line, .line2 {
+    height: 4px;
+    background: #291d16;
+    width: 90%;
+    margin: 10px auto;
+}
+
+#website-title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    font-size: 53px;
+    color: var(--cor-principal-texto);
+    filter: drop-shadow(0 0 0.10rem #281b12);
+    margin: 20px 0;
+}
+
+.website-description {
     display: flex;
-    width: 550px;
-    height: 800px;
-    left: 54%;
-    top: 31%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
 .textbox1 {
-    position: absolute;
-    display: flex;
-    width: 47%;
-    height: 125%;
-    left: 4.3%;
-    top: 31%;
+    flex: 1 1 300px;
+    max-width: 500px;
+    margin: 10px;
+    position: relative;
 }
 
 #text-da-textbox1 {
     text-align: justify;
-    line-height: 1.2;
-    font-size: 40px;
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 1px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: var(--cor-principal-texto);
+    margin-bottom: 10px;
 }
 
-#span2 {
-    position: absolute;
-    line-height: 1.2;
-    font-size: 40px;
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 700;
-    font-style: normal;
-    margin: 1px;
-    top: 41%;
+#video1 {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
 }
 
-#p3 {
-    position: absolute;
-    line-height: 1.2;
-    font-size: 40px;
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 1px;
-    top: 50%;
+#link-do-video {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--cor-principal-texto);
+    text-decoration: none;
 }
 
-#span4 {
-    position: absolute;
-    line-height: 1.2;
-    font-size: 25px;
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 100;
-    font-style: normal;
-    margin: 1px;
-    top: 66%;
+#link-do-video:hover {
+    color: red;
 }
 
-#line3 {
-    position: absolute;
-    top: 38%;
-    width: 96%;
+#image1 {
+    flex: 1 1 300px;
+    max-width: 550px;
+    width: 100%;
+    margin: 10px;
+    filter: drop-shadow(0 0 0.50rem #281b12);
+}
+
+#span2, #p3, #span5, #span6 {
+    display: block;
+    margin: 10px 0;
+    color: #281b12;
+}
+
+#line3, #line4 {
     height: 4px;
     background: #291d16;
-    margin: 3px;
+    margin: 10px 0;
 }
 
-#span5 {
-    position: absolute;
-    line-height: 1.2;
-    font-size: 25px;
-    color: #291d16;
-    font-family: "Old Standard TT", serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 1px;
-    top: 83%;
+.creditos {
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
 }
 
-#line4 {
-    position: absolute;
-    top: 76%;
-    width: 96%;
-    height: 4px;
-    background: #291d16;
-    margin: 3px;
+#logo-photon {
+    max-width: 300px;
+    width: 80%;
+    margin-bottom: 10px;
 }
 
-.galeria {
-    position: absolute;
-    
+#creditos-span {
+    font-size: 18px;
+    color: var(--cor-principal-texto);
+}
+
+@media screen and (max-width: 768px) {
+    #website-title {
+        font-size: 36px;
+    }
+    #text-da-textbox1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    #website-title {
+        font-size: 23px;
+    }
+
+    .website-description {
+        flex-direction: column;
+        align-items: center;
+    }
+    #image1, #video1 {
+        width: 90%;
+        max-width: 400px;
+    }
+    #text-da-textbox1 {
+        font-size: 16px;
+    }
 }
