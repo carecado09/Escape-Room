@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    width: 500px;
+    height: 500px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.line {
+    position: absolute;
+    top: 10%;
+    left: 4.4%;
+    width: 90%;
+    height: 4px;
+    background: #291d16;
+}
+
+.line2 {
+    position: absolute;
+    top: 29%;
+    left: 4.4%;
+    width: 90%;
+    height: 4px;
+    background: #291d16;
+}
+
+#website-title {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 55%;
+    top: 20%;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#detail1 {
+    display: flex;
+    position: absolute;  
+}
+
+#image1 {
+    position: absolute;
+    display: flex;
+    width: 550px;
+    height: 800px;
+    left: 54%;
+    top: 31%;
+}
+
+.textbox1 {
+    position: absolute;
+    display: flex;
+    width: 47%;
+    height: 125%;
+    left: 4.3%;
+    top: 31%;
+}
+
+#text-da-textbox1 {
+    text-align: justify;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1px;
+}
+
+#span2 {
+    position: absolute;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 1px;
+    top: 41%;
+}
+
+#p3 {
+    position: absolute;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1px;
+    top: 50%;
+}
+
+#span4 {
+    position: absolute;
+    line-height: 1.2;
+    font-size: 25px;
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 1px;
+    top: 66%;
+}
+
+#line3 {
+    position: absolute;
+    top: 38%;
+    width: 96%;
+    height: 4px;
+    background: #291d16;
+    margin: 3px;
+}
+
+#span5 {
+    position: absolute;
+    line-height: 1.2;
+    font-size: 25px;
+    color: #291d16;
+    font-family: "Old Standard TT", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 1px;
+    top: 83%;
+}
+
+#line4 {
+    position: absolute;
+    top: 76%;
+    width: 96%;
+    height: 4px;
+    background: #291d16;
+    margin: 3px;
+}
+
+.galeria {
+    position: absolute;
+    
+}
